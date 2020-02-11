@@ -2,7 +2,7 @@
 
 This is a tiny helper class to exclude a property from Json Serialization.
 
-In case you have no access to the actual class so you can't add any attributes (like `[JsonIgnore]`), or you simply don't want to. Or you would like to decide this at run time (which properties to serialize) - use this class.
+In case you have no access to the actual class you're serializing - so you can't add any attributes (like `[JsonIgnore]`), or you simply don't want to. Orif  you would like to decide this at run time - which properties to serialize - then use this class.
 
 Usage:
 

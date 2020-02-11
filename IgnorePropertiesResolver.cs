@@ -9,11 +9,11 @@ namespace Jitbit.Utils
 	//helper to ignore some properties from serialization
 	public class IgnorePropertiesResolver : DefaultContractResolver
 	{
-		private IEnumerable<string> _propsToIgnore;
+		private HashSet<string> _propsToIgnore;
 
 		public IgnorePropertiesResolver(IEnumerable<string> propNamesToIgnore)
 		{
-			_propsToIgnore = propNamesToIgnore;
+			_propsToIgnore = new HashSet<string>(propNamesToIgnore);
 		}
 
 		protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)

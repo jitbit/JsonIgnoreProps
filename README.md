@@ -29,5 +29,3 @@ JsonConvert.SerializeObject(
 ```
 
 ---
-
-&copy; [Jitbit Help desk software](https://jitbit.github.com/helpdesk/)

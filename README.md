@@ -11,7 +11,7 @@ JsonConvert.SerializeObject(
 	YourObject,
 	new JsonSerializerSettings() {
 		ContractResolver = new IgnorePropertiesResolver(new[] { "Prop1", "Prop2" })
-	};
+	}
 );
 ```
 
@@ -24,7 +24,7 @@ JsonConvert.SerializeObject(
 	YourObject,
 	new JsonSerializerSettings() {
 		ContractResolver = resolver //reuse
-	};
+	}
 );
 ```
 
